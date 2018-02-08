@@ -7,6 +7,8 @@
 //
 
 #import "FFPDFDocument.h"
+#import "FCFileManager.h"
+#import "FJFileManager.h"
 
 
 @implementation FFPDFDocument{
@@ -22,6 +24,7 @@
         _url = pdfURL;
         _pageRange = FFMakePageRange(1, 1);
          document = [[PDFDocument alloc]initWithURL:pdfURL];
+        _savePath = @"/Users/fjq/Desktop";
     }
     return self;
 }
@@ -62,10 +65,38 @@
 }
 
 - (void)saveNewPDF {
+    [self saveNewPDFWithPath:_savePath];
+}
+
+- (void)saveNewPDFWithPath:(NSString *)path
+{
     if (newDocument != nil) {
-        NSString *urlString = @"file:///Users/fjq/Desktop/1.pdf";
-        [newDocument writeToURL:[NSURL URLWithString:urlString]];
-        [newDocument writeToFile:@"f.pdf"];
+//        NSString *urlString = [NSString stringWithFormat:@"file://%@/sample.pdf",path];;
+//        BOOL success = [newDocument writeToURL:[NSURL URLWithString:urlString]];
+        
+//        NSFileManager *fileManager = [NSFileManager defaultManager];
+//        NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);
+//        NSString *documentPath = [arr firstObject];
+//        NSString *filpath = [documentPath stringByAppendingPathComponent:@"sample.pdf"];
+//
+//        BOOL exict = [fileManager fileExistsAtPath:filpath];
+//
+//        if (exict) {
+//            NSLog(@"文件不存在");
+//        }
+//        else{
+//
+//        }
+//        BOOL success = [newDocument writeToFile:@"/Users/fjq/Desktop/sample.pdf"];
+//
+//        if (success) {
+//            NSLog(@"写入成功");
+//        }
+//        else{
+//            NSLog(@"写入失败");
+//        }
+        
+        [FJFileManager createDirectoryOnDesktop];
     }
 }
 - (NSInteger)pageNum {

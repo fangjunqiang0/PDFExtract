@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Quartz/Quartz.h>
 #import "FFPDFDocument.h"
+#import "FJFileManager.h"
 
 
 
@@ -58,7 +59,7 @@
 
 }
 - (IBAction)openInFinder:(id)sender {
-    
+    [FJFileManager createDirectoryOnDesktop];
 }
 
 #pragma mark - tableViewDelegate

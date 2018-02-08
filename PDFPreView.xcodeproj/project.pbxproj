@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6409BFF62007136600C1ADBD /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6409BFF52007136600C1ADBD /* Quartz.framework */; };
+		6409C0402007800100C1ADBD /* FCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C03F2007800100C1ADBD /* FCFileManager.m */; };
+		6480C00E200894C200FDDED3 /* FJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6480C00D200894C200FDDED3 /* FJFileManager.m */; };
 		64B884D720060747007449F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B884D620060747007449F4 /* AppDelegate.m */; };
 		64B884DA20060747007449F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B884D920060747007449F4 /* ViewController.m */; };
 		64B884DF20060747007449F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B884DE20060747007449F4 /* Assets.xcassets */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		6409BFF52007136600C1ADBD /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		6409C03E2007800000C1ADBD /* FCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFileManager.h; sourceTree = "<group>"; };
+		6409C03F2007800100C1ADBD /* FCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFileManager.m; sourceTree = "<group>"; };
+		6480C00C200894C200FDDED3 /* FJFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJFileManager.h; sourceTree = "<group>"; };
+		6480C00D200894C200FDDED3 /* FJFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJFileManager.m; sourceTree = "<group>"; };
 		64B884D220060747007449F4 /* PDFPreView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFPreView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B884D520060747007449F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64B884D620060747007449F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +127,10 @@
 				64B884D920060747007449F4 /* ViewController.m */,
 				64B8854420063565007449F4 /* FFPDFDocument.h */,
 				64B8854520063565007449F4 /* FFPDFDocument.m */,
+				6409C03E2007800000C1ADBD /* FCFileManager.h */,
+				6409C03F2007800100C1ADBD /* FCFileManager.m */,
+				6480C00C200894C200FDDED3 /* FJFileManager.h */,
+				6480C00D200894C200FDDED3 /* FJFileManager.m */,
 				64B884DE20060747007449F4 /* Assets.xcassets */,
 				64B884E020060747007449F4 /* Main.storyboard */,
 				64B884E320060747007449F4 /* Info.plist */,
@@ -281,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B884DA20060747007449F4 /* ViewController.m in Sources */,
+				6480C00E200894C200FDDED3 /* FJFileManager.m in Sources */,
+				6409C0402007800100C1ADBD /* FCFileManager.m in Sources */,
 				64B884E520060747007449F4 /* main.m in Sources */,
 				64B884D720060747007449F4 /* AppDelegate.m in Sources */,
 				64B8854620063565007449F4 /* FFPDFDocument.m in Sources */,

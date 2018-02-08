@@ -30,7 +30,7 @@ typedef void(^Completed)(FFPDFDocument *document);
 
 @property (nonatomic, readonly) NSInteger pageNum;
 @property (nonatomic, readonly) NSURL *url;
-@property (nonatomic, strong) Completed completed;
+@property (nonatomic, strong) NSString *savePath;
 
 /**
  需要提取的页面范围 默认(1,1)
@@ -55,4 +55,5 @@ typedef void(^Completed)(FFPDFDocument *document);
  保存新的pdf文件
  */
 - (void)saveNewPDF;
+- (void)saveNewPDFWithPath:(NSString *)path;
 @end
